@@ -1,0 +1,37 @@
+db.items.insertOne({name:"Micromax in note 1", price: 10999,rating:3.5})
+
+db.items.insertMany([{name:"Xiaomi redmi note 9 pro", price: 12999,rating:4.5},{name:"realme narzo 10", price: 10499,rating:3.5},{name:"moto g9", price: 14999,rating:3.5},{name:"1+ note 7 pro", price:29999,rating:4.7}])
+
+db.items.insertMany([{name:"Xiaomi redmi K20 pro", price: 22999,rating:4.5},{name:"relme X3", price: 29499,rating:3.5},{name:"Huawye P20", price: 70999,rating:3.5},{name:"iphone 11 pro", price:129999,rating:4.7}])
+
+db.items.find({rating:3.5})
+
+db.items.find({price:10499})
+
+db.items.find({rating:{$gte:3.5}})
+
+db.items.find({rating:{$gt:3.5}})
+
+db.items.find({price:{$gt:15000}})
+
+db.items.find({rating:{$gt:3.5},price:{$gt:15000}})
+
+db.items.find({$or:[{rating:{$gt:3.5}},{price:{$gt:15000}}]})
+
+db.items.find({price:{$gt:10000}},{price:1})
+
+db.items.find({rating:{$gt:3.5}},{rating:1})
+
+db.items.find({rating:{$gt:3.5}},{rating:1,price:1})
+
+db.items.deleteOne({rating:4.7})
+
+db.items.deleteMany({rating:3.5})
+
+db.items.updateOne({name:"Xiaomi redmi note 9 pro"},{$set:{price:15999}})
+
+db.items.updateMany({price : 129999},{$set:{rating : 5}})
+
+db.items.updateMany({rating :3.5},{$set:{price:10000}})
+
+db.anotherCollection.insertMany([{name:"Xiaomi redmi K20 pro", price: 22999,rating:4.5},{name:"relme X3", price: 29499,rating:3.5},{name:"Huawye P20", price: 70999,rating:3.5},{name:"iphone 11 pro", price:129999,rating:4.7}])

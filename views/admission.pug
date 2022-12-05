@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts
+    script(src="/static/include.js")
+
+block style
+        style
+            include ../static/style.css
+            include ../static/style-admission.css
+
+block contents
+    section#admission
+         h2 Admission Form
+         form(action="/admission", method="post", class="my-admission")
+            input(type="name", class="input", name="name", placeholder="Enter Your Name")
+            input(type="gender", class="input", name="gender", placeholder="Gender")
+            input(type="age", class="input", name="age", placeholder="Enter Your Age")
+            input(type="address", class="input", name="address", placeholder="Enter Your Address")
+            input(type="phone", class="input", name="phone", placeholder="Enter Your Mobile No.")
+            input(type="email", class="input", name="email", placeholder="Enter Your E-Mail Id")
+            input(type="password", class="input", name="password", placeholder="Enter a Password")
+            button Submit

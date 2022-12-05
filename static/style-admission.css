@@ -1,0 +1,55 @@
+*{
+    top: 0px;
+    margin: 0px;
+
+}
+/* #admission::before{
+    content: "";
+    height: 793px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .87;
+    position: absolute;
+    background: center/ cover no-repeat url('../static/bg5.png.jpg'); 
+}*/
+#admission{
+    text-align: center;
+    font-size: 27px;
+    min-height: 100vh;
+}
+
+#admission h2{
+    color: #1a1819;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    margin: 50px 0px;
+    margin-right: 705px;
+}
+
+.my-admission{
+    display: flex;
+    flex-direction: column;
+    margin: 101px 129px;
+    width: 521px;
+    height: 335px;
+}
+.input{
+    margin: 3px 0px;
+    padding: 7px 31px;
+    background-color: #958e8e8a;
+    border-radius: 10px;
+
+}
+button{
+    width: 172px;
+    padding: 4px 0px;
+    margin: 23px auto;
+    background-color: #746f6f96;
+    border-radius: 19px;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Permanent Marker';
+
+}
